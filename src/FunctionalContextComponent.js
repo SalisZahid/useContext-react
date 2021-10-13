@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
+import ButtonComp from "./ButtonComp";
 import { useTheme, useThemeUpdate } from "./ThemeContext";
 
 export default function FunctionalContextComponent() {
@@ -22,6 +23,8 @@ export default function FunctionalContextComponent() {
       <button onClick={toggleTheme}>Toggle theme</button>
 
       <div style={themeStyles}>Funtional Context theme</div>
+
+      <ButtonComp />
     </>
   );
 }
